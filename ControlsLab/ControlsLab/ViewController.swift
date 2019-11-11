@@ -49,14 +49,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardNum.text = "A"
+        configureStepper()
     }
     
     
     func configureStepper() {
-        stepperCont.minimumValue = 2.0
+        stepperCont.minimumValue = 1.0
         stepperCont.maximumValue = 13.0
-        stepperCont.stepValue = 2.0
+        stepperCont.stepValue = 1.0
         stepperCont.value = 4.0
      }
     
@@ -71,6 +71,9 @@ class ViewController: UIViewController {
     
     @IBAction func cardCount(_ sender: UIStepper) {
         cardNum.text = String(format: "%0.f", stepperCont.value)
+        if stepperCont.value == 1.0 {
+            cardNum.text = "A"
+        }
         if stepperCont.value > 10.0 {
             switch stepperCont.value {
             case 11.0:
