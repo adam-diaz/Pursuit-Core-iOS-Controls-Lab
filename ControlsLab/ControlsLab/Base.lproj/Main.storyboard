@@ -35,6 +35,9 @@
                                     <segment title="♣️"/>
                                     <segment title="♠️"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentSuits:" destination="BYZ-38-t0r" eventType="valueChanged" id="ytX-OJ-WOd"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w9-BF-Fj3">
                                 <rect key="frame" x="160" y="223" width="94" height="24"/>
@@ -91,7 +94,7 @@
                         <outlet property="cardSym" destination="e9Y-Y2-zq7" id="wEr-wN-Pfc"/>
                         <outlet property="segmentLabel" destination="uQc-Jb-g0O" id="xZK-R9-kwf"/>
                         <outlet property="segmentedControl" destination="il8-ce-GLM" id="oBL-71-rfa"/>
-                        <outlet property="stepperControl" destination="r3T-2E-yto" id="JTu-Fi-S2R"/>
+                        <outlet property="stepperCont" destination="r3T-2E-yto" id="JTu-Fi-S2R"/>
                         <outlet property="stepperLabel" destination="4w9-BF-Fj3" id="L9u-ju-LcH"/>
                     </connections>
                 </viewController>
